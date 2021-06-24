@@ -8,3 +8,11 @@
     box-shadow: none;
 }
 
+  #imagen_empleo{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #card-empleo{
+      /* margin-left:30% ; */
+  }
