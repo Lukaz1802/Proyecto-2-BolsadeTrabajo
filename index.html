@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Bolsa de trabajo</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Empleos</a>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Agregar empleos</a>
+              </li>
+                  
+              
+            </div>
+          </nav>
+    </header>
+    <main>
+      
+        <h1 class="text-center">BOLSA DE TRABAJO</h1>
+        <div class="container">
+          <br/>
+          <img src="./Recursos/" alt="">
+        <div class="row justify-content-center ">
+                              <div class="col-12 col-md-10 col-lg-8 " >
+                                  <form class="card card-sm">
+                                      <div class="card-body row no-gutters align-items-center">
+                                          <div class="col-auto">
+                                              <i class="fas fa-search h4 text-body"></i>
+                                          </div>
+                                          <!--end of col-->
+                                          <div class="col">
+                                              <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Buscar trabajos/empresas" id="empleoBuscar">
+                                          </div>
+                                          <!--end of col-->
+                                          <div class="col-auto">
+                                              <button class="btn btn-lg btn-success" type="submit" onclick="filterEmpleos()">Buscar</button>
+                                          </div>
+                                          <!--end of col-->
+                                      </div>
+                                  </form>
+                              </div>
+                              <!--end of col-->
+                          </div>
+      </div>
+          <hr>
+          <h3 class="text-center">Empleos disponibles</h3>
+          <br>
+          <hr>
+         <div class="row m-0 justify-content-center">
+           <div class="col-auto p-5 text-center"> <div class="container" id="card-empleo">
+            <div class="col">
+               <div class="card mb-3" style="max-width: 650px;">
+             <div class="row no-gutters align-items-center">
+               <div class="col-md-4">
+                 <img id="imagen_empleo" src="https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg" alt="...">
+               </div>
+               <div class="col-md-8">
+                 <div class="card-body">
+                   <h2 class="card-title">Desarrollador JS</h2>
+                   <h3 class="card-title">Rolling Code</h3>
+                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laudantium? Necessitatibus qui architecto nihil accusantium!.</p> 
+                 </div>
+                   <button type="button" class="btn btn-primary">Ver empleo</button>
+                 </div>
+             </div>
+           </div>
+            </div>
+          </div>
+       </div>
+         </div>
+         <div class="row m-0 justify-content-center">
+          <div class="col-auto p-5 text-center"> <div class="container" id="card-empleo">
+           <div class="col">
+              <div class="card mb-3" style="max-width: 650px;">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4">
+                <img id="imagen_empleo" src="https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">Desarrollador JS</h2>
+                  <h3 class="card-title">Rolling Code</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laudantium? Necessitatibus qui architecto nihil accusantium!.</p> 
+                </div>
+                  <button type="button" class="btn btn-primary">Ver empleo</button>
+                </div>
+            </div>
+          </div>
+           </div>
+         </div>
+      </div>
+        </div>
+         
+         
+
+          
+    </main>
+    <footer></footer>
+</body>
+</html>
