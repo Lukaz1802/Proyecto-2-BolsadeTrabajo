@@ -3,7 +3,7 @@ let usuario = {
     contrasena: "",
 }
 
-let usuarios = JSON.parse (localStorage.getItem ("usuarios")) || []
+let usuariosDB = JSON.parse (localStorage.getItem ("usuarios")) || []
 
 const handleChange = function (e) {
     usuario = {
@@ -15,7 +15,7 @@ const handleChange = function (e) {
   const handleSubmit = function (e) {
     e.preventDefault();
         
-    let usuarioVerificado = usuarios.find(function (user) {
+    let usuarioVerificado = usuariosDB.find(function (user) {
       return user.email === usuario.email;
     });
   
@@ -24,7 +24,7 @@ const handleChange = function (e) {
         alert("Usted puede ingresar a la página");
         localStorage.setItem("usuario", JSON.stringify(usuarioVerificado));
   
-        location.replace("/index.html")
+        location.replace("/home.html")
         
       } else {
         alert("usuario o contraseña incorrectos");

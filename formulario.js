@@ -44,7 +44,7 @@ let trabajos= JSON.parse(localStorage.getItem("trabajo")) || []
              
            if(!isNaN (parseInt(trabajo.vacantes))){
             if(!trabajo.imagen){
-                 trabajo.imagen="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?cs=srgb&dl=pexels-sora-shimazaki-5673488.jpg&fm=jpg"
+                 trabajo.imagen="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg"
               }
               trabajos.push(trabajo)
               localStorage.setItem("trabajo",JSON.stringify(trabajos))

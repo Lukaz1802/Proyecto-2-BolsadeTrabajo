@@ -1,4 +1,4 @@
-let usuario = JSON.parse(localStorage.getItem("usuarios")) || null
+// let usuario = JSON.parse(localStorage.getItem("usuarios")) || null
 
 let linkAdmin = document.querySelector("#linkAdmin")
 
@@ -31,7 +31,6 @@ if (!usuario) {
                   <td>${trabajo.tipo}</td>
                   <td>${trabajo.vacantes}</td>
                   <td>
-                  <button class="btn btn-warning" onclick='verTrabajo(${index})'>Ver</button>
                   <button class="btn btn-info" onclick='irModif(${index})'>Modif</button>
                   <button class="btn btn-danger" onclick='borrarTrabajo(${index})'>X</button>
                   </td>  
