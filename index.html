@@ -100,26 +100,70 @@
 
       </header>
        <main>
-      
+      <hr>
         <h1 class="text-center">BOLSA DE TRABAJO</h1>
+<hr>
+        <section>
+          <h1 class="text-center">Destacados</h1>
+          <div class="container">
+            <div class="card-deck">
+              <div class="card">
+                <img src="./Recursos/background2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Recursos/background2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Recursos/background2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+
+
+
         <div class="container">
           <br/>
           <img src="./Recursos/" alt="">
-        <div class="row justify-content-center ">
-                              <div class="col-12 col-md-10 col-lg-8 " >
-                                  <form class="card card-sm">
-                                      <div class="card-body row no-gutters align-items-center">
-                                          <div class="col-auto">
-                                              <i class="fas fa-search h4 text-body"></i>
-                                          </div>
-                                          <!--end of col-->
-                                          <div class="col">
-                                              <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Buscar trabajos/empresas" id="empleoBuscar">
-                                          </div>
-                                          <!--end of col-->
-                                          <div class="col-auto">
-                                              <button class="btn btn-lg btn-success" type="submit" onclick="filterEmpleos()">Buscar</button>
-                                          </div>
+          <div class="row">
+            <div class="col col-md-6 offset-md-3">
+              <div class="input-group my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar trabajos.."
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  id="textBuscar"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-info"
+                    type="button"
+                    id="button-addon2"
+                    onclick="filterTabla()"
+                  >
+                    Buscar
+                  </button>
                                           <!--end of col-->
                                       </div>
                                   </form>
@@ -131,43 +175,20 @@
           <h3 class="text-center">Empleos disponibles</h3>
           <br>
           <hr>
-         <div class="row m-0 justify-content-center">
-           <div class="col-auto p-5 text-center"> <div class="container" id="card-empleo">
-            <div class="col">
-               <div class="card mb-3" style="max-width: 650px;">
-             <div class="row no-gutters align-items-center">
-               <div class="col-md-4">
-                 <img id="imagen_empleo" src="https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg" alt="...">
-               </div>
-               <div class="col-md-8">
-                 <div class="card-body">
-                   <h2 class="card-title">Desarrollador JS</h2>
-                   <h3 class="card-title">Rolling Code</h3>
-                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laudantium? Necessitatibus qui architecto nihil accusantium!.</p> 
-                 </div>
-                   <button type="button" class="btn btn-primary">Ver empleo</button>
-                 </div>
-             </div>
-           </div>
-            </div>
-          </div>
-       </div>
-         </div>
-         <div class="row m-0 justify-content-center">
-          <div class="col-auto p-5 text-center"> <div class="container" id="card-empleo">
-           <div class="col">
-              <div class="card mb-3" style="max-width: 650px;">
-            <div class="row no-gutters align-items-center">
-              <div class="col-md-4">
-                <img id="imagen_empleo" src="https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h2 class="card-title">Desarrollador JS</h2>
-                  <h3 class="card-title">Rolling Code</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laudantium? Necessitatibus qui architecto nihil accusantium!.</p> 
-                </div>
-                  <button type="button" class="btn btn-primary">Ver empleo</button>
+        
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Puesto</th>
+                <th scope="col">Nombre de la Empresa</th>
+                <th scope="col">Ubicación</th>
+                <th scope="col">Tipo</th>
+              </tr>
+            </thead>
+            <tbody id="tdobyCuerpo"></tbody>
+          </table>
+                
+              
                 </div>
             </div>
           </div>
@@ -221,29 +242,6 @@
   crossorigin="anonymous"
 ></script>
 <script src="https://use.fontawesome.com/823835b326.js"></script>
-<script>
-  localStorage.clear();
-  let usuarios = [
-    {
-      id: 1,
-      email: "pgiroud@gmail.com",
-      contrasena: "123456",
-      nombre: "Pablo Giroud",
-      area: "Tuco",
-      imagen:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gSfpMjPSlwoECBbnZFHOazzVlL6GaiQXyg&usqp=CAU",
-    },
-    {
-      id: 2,
-      email: "admin@gmail.com",
-      contrasena: "123456",
-      nombre: "Admin",
-      area: "Admin",
-      imagen:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMa62z19XfXnODX6-HD_08TAO_Dj0USyRoh8ewedittk8iNv4P_rdMS4wQs3IdWRTDnM&usqp=CAU",
-    },
-  ];
-  localStorage.setItem("usuarios", JSON.stringify(usuarios));
-</script>
+<script src="./EmpleosHome.js"></script>
 </body>
 </html>
