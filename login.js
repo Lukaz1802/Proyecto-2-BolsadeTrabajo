@@ -24,7 +24,7 @@ const handleChange = function (e) {
         alert("Usted puede ingresar a la página");
         localStorage.setItem("usuario", JSON.stringify(usuarioVerificado));
   
-        location.replace("/home.html")
+        location.replace("/index.html")
         
       } else {
         alert("usuario o contraseña incorrectos");
