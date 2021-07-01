@@ -1,4 +1,4 @@
-// let usuario = JSON.parse(localStorage.getItem("usuarios")) || null
+let usuario = JSON.parse(localStorage.getItem("usuarios")) || null
 
 let linkAdmin = document.querySelector("#linkAdmin")
 
@@ -26,10 +26,10 @@ if (!usuario) {
       let fila = document.createElement("tr"); 
       let datos = `
                   <th scope="row">${trabajo.id}</th>
+                  <td>${trabajo.logo}</td>
                   <td>${trabajo.nombre}</td>
-                  <td>${trabajo.puesto}</td>
-                  <td>${trabajo.tipo}</td>
-                  <td>${trabajo.vacantes}</td>
+                  <td>${trabajo.ubicacion}</td>
+                  <td>${trabajo.hora}</td>
                   <td>
                   <button class="btn btn-info" onclick='irModif(${index})'>Modif</button>
                   <button class="btn btn-danger" onclick='borrarTrabajo(${index})'>X</button>
