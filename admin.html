@@ -5,44 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="admin.css">
     <title>Acceso Administrador</title>
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">LOGO</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Empleos</a>
-                            </li>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Agregar empleos</a>
-                          </li>
-                          <li class="nav-item active" id="linkAdmin"> <a class="nav-link" href="#">Administrador</a>
-                          </li>
-                              
-                          
-                        </div>
-                      </nav>
+        <!-- Inicio Navbar -->
+
+        <div class="container-fluid navv">
+          <nav class="navbar navbar-expand-lg navpersonalizada">
+            <div class="container">
+              <a class="navbar-brand" href="./index.html"
+                ><img
+                  src="./img/trabajostuc-logo.png"
+                  width="45"
+                  height="45"
+                  alt="logo"
+              /></a>
+              <a href="./login.html"> <button type="button" class="btn btn-primary">Login</button></a>
+              <button
+                class="navbar-dark navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item ml-auto border-transition">
+                    <a class="nav-link text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item ml-auto border-transition">
+                    <a class="nav-link text-white" href="#">Empleos</a>
+                  </li>
+                  <li class="nav-item ml-auto border-transition">
+                    <a class="nav-link text-white" href="#">Agregar Empleos</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        </div>
+        
+              <!-- Fin Navbar -->
   </header>
 
     <main>
+      <hr>
+      <hr>
+      <hr>
+      <br>
       <div class="container">
         <div class="row mt-5">
           <div class="col">
             <h1>Registro de Empleos Ofertados:</h1>
             <hr />
           </div>
-      <table class="table table-striped table-dark">
+      <table class="table table-striped ">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -208,16 +230,53 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+       <!--Footer-->
+
+     <footer class="footer-admin">
+      <div class="container">
+        <div class="row text-center mt-2">
+          <div class="col-12 col-md-4 mb-2 pb-4 mx-auto">
+            <img  src="./img/trabajostuc-logo.png" width="100px" alt="logo footer">
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-2 d-flex align-items-center justify-content-center">
+                  <a href="#"><i class="fa fa-facebook fa-2x text-white mx-2" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x text-white mx-2" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x text-white mx-2" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-2 d-flex align-items-center justify-content-center">
+            <span>La primera bolsa tucumana de trabajo  <i class="#</i> en 
+              <br> Tucumán, Argentina.</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="small">Coyright &copy;2021. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!--Fin footer-->
+
+    </footer>
 
    
     <script src= "formulario.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://use.fontawesome.com/823835b326.js"></script>
+ 
+
+
 </body>
 </html>
