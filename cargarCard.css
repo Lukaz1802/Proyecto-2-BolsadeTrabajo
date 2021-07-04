@@ -53,8 +53,8 @@
 ​
 ​
 #nombreText{
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 50%;
 }
 ​
 ​
@@ -62,15 +62,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    ;
 }
 .card-body{
    
-    text-align: center;
+    text-align:left;
     align-items: center;
     color:#213BEB;
 }
 #bodyCard{
-    font-size: 25px;
+    font-size: 18px;
 }
 button{    
     float: right; 

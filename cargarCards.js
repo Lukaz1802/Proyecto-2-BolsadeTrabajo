@@ -1,5 +1,4 @@
 let trabajos= JSON.parse(localStorage.getItem("trabajo"))
-​
 const cargarCard=function(){
   let cuerpo= document.querySelector("#nombreText")
       trabajos.forEach(function(item) {
@@ -14,17 +13,18 @@ const cargarCard=function(){
              <h5 class="card-title">${item.nombre}</h5>
              <p class="card-text">Puesto:${item.puesto}</p>
              <p>Descripcion: ${item.descripcion}</p>
-             <p class="card-text"><small class="text-muted">${item.fechaCreacion}</small></p>
-          <div id="botonPost">
-           <button type="button" class="btn  mb-4 " data-toggle="button">
-             Postularse</button></div>
-             
+             <p>Tipo: ${item.tipo}</p>
+             <p>Ubicación: ${item.ubicacion}</p>
+             <p>Página Web: ${item.url}</p>
+             <p class="card-text"><small class="text-muted">
+             ${item.fechaCreacion}</small></p>
+             <div id="botonPost">
+           <button type="button" class="btn  mb-4 " data-toggle="button" >
+             Postularse  </button></div>
            </div>
            </div>
-              
        </div>
      </div>`
-     
      container.innerHTML=datos
      cuerpo.appendChild(container)        
       });
