@@ -17,10 +17,8 @@
     
   }
   
-
-  .footer-admin{
-      
-    margin-top: 13%;
+  .footer-admin{  
+    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #00c8f8;
@@ -41,11 +39,11 @@
     box-shadow: none;
 }
 
-  #imagen_empleo{
-    width: 100%;
-    object-fit: cover;
-  }
-  .shadow-drop-2-tr {
-    -webkit-animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
+#imagen_empleo{
+  width: 100%;
+  object-fit: cover;
+}
+.shadow-drop-2-tr {
+  -webkit-animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
