@@ -12,28 +12,20 @@ const handleChange = function (e) {
     };
   };
   
-  const handleSubmit = function (e) {
-    e.preventDefault();
-        
-    let usuarioVerificado = usuariosDB.find(function (user) {
-      return user.email === usuario.email;
-    });
-  
-    if (usuarioVerificado) {
-      if (usuario.contrasena === usuarioVerificado.contrasena) {
-        alert("Usted puede ingresar a la página");
-        localStorage.setItem("usuario", JSON.stringify(usuarioVerificado));
-  
-        location.replace("/index.html")
-        
-      } else {
-        alert("usuario o contraseña incorrectos");
-      }
-
+const handleSubmit = function (e) {
+  e.preventDefault();
+  let usuarioVerificado = usuariosDB.find(function (user) {
+    return user.email === usuario.email;
+  });
+  if (usuarioVerificado) {
+    if (usuario.contrasena === usuarioVerificado.contrasena) {
+      alert("Bienvenido a Tucumán Trabajo!");
+      localStorage.setItem("usuario", JSON.stringify(usuarioVerificado));
+      location.replace("/index.html")
     } else {
-      alert("usuario o contraseña incorrectos");
+      alert("Usuario o contraseña incorrectos");
     }
-  };
-
-
-  
+  } else {
+    alert("Usuario o contraseña incorrectos");
+  }
+};

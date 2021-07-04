@@ -61,8 +61,31 @@
 
 
 
-
-
-    <script src="login.js"></script>
+      <script>
+        localStorage.clear();
+        let usuarios = [
+          {
+            id: 1,
+            email: "pgiroud@gmail.com",
+            contrasena: "123456",
+            nombre: "Pablo Giroud",
+            area: "Tuco",
+            imagen:
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gSfpMjPSlwoECBbnZFHOazzVlL6GaiQXyg&usqp=CAU",
+          },
+          {
+            id: 2,
+            email: "admin@gmail.com",
+            contrasena: "123456",
+            nombre: "Admin",
+            area: "Admin",
+            imagen:
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMa62z19XfXnODX6-HD_08TAO_Dj0USyRoh8ewedittk8iNv4P_rdMS4wQs3IdWRTDnM&usqp=CAU",
+          },
+        ];
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      </script>
+      <script src="/login.js"></script>
+      <script src="/js/app.js"></script>
 </body>
 </html>
