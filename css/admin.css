@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'sans-serif', ;  
   }
   
 .navv{
@@ -18,11 +18,14 @@
 
   
   .footer-admin{  
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 55vh;
+    padding-top: 37px;
+    padding-bottom: 30px;
     background-color: #00c8f8;
     color: white;
+    background-color: #00c8f8;
+    color: white;
+    
   }
   
   .table-striped {

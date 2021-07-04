@@ -27,6 +27,9 @@
 .footer-index{
   background-color: #00c8f8;
   color: white;
+  margin-top: 3vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .form-control-borderless {
