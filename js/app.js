@@ -1,10 +1,9 @@
 let usuario=JSON.parse(localStorage.getItem('usuario')) || null
 let linkAdmin= document.querySelector('#linkAdmin')
+let linkForm= document.querySelector('#linkForm')
 let log= document.querySelector('#login-out')
 let usuariosDB = JSON.parse (localStorage.getItem ("usuarios")) || []
-let usuarioVerificado = usuariosDB.find(function (user) {
-  return user.email === usuario.email;
-});
+
 
 if(!usuario){
   log.innerHTML=`
@@ -15,12 +14,18 @@ if(!usuario){
 }else{
   if(usuario.email==='admin@gmail.com'){
     linkAdmin.innerHTML=`
+    <a class="nav-link text-white" href="./admin.html">Admin</a>
+    `
+    linkForm.innerHTML=`
     <a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>
     `
     log.innerHTML=`
     <button type="button" class="btn btn-primary" onclick="deslogueo()">Logout</button>
     `
   }else{
+    let usuarioVerificado = usuariosDB.find(function (user) {
+      return user.email === usuario.email;
+    });
       if (usuarioVerificado) {
         if (usuario.contrasena === usuarioVerificado.contrasena) {
           log.innerHTML=`

@@ -6,6 +6,7 @@
   
   
 }
+
 .navv{
   width: 100%;
   position: fixed;
@@ -24,9 +25,6 @@
 }
 
 .footer-index{
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #00c8f8;
   color: white;
 }

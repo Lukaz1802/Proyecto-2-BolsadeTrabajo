@@ -62,19 +62,12 @@
 
 
       <script>
-        localStorage.clear();
+        //localStorage.clear();
+        let usuarios=JSON.parse(localStorage.getItem('usuarios')) || null
+        if(!usuarios){
         let usuarios = [
           {
             id: 1,
-            email: "pgiroud@gmail.com",
-            contrasena: "123456",
-            nombre: "Pablo Giroud",
-            area: "Tuco",
-            imagen:
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gSfpMjPSlwoECBbnZFHOazzVlL6GaiQXyg&usqp=CAU",
-          },
-          {
-            id: 2,
             email: "admin@gmail.com",
             contrasena: "123456",
             nombre: "Admin",
@@ -82,10 +75,55 @@
             imagen:
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMa62z19XfXnODX6-HD_08TAO_Dj0USyRoh8ewedittk8iNv4P_rdMS4wQs3IdWRTDnM&usqp=CAU",
           },
+          {
+            id: 2,
+            email: "cauteri@gmail.com",
+            contrasena: "123456",
+            nombre: "Carina",
+            area: "Auteri",
+            imagen:
+              "",
+          },
+          {
+            id: 3,
+            email: "nmerdiles@gmail.com",
+            contrasena: "123456",
+            nombre: "Nori",
+            area: "Meriles",
+            imagen:
+              "",
+          },
+          {
+            id: 4,
+            email: "clozada@gmail.com",
+            contrasena: "123456",
+            nombre: "Carlos",
+            area: "Lozada",
+            imagen:
+              "",
+          },
+          {
+            id: 5,
+            email: "l@gmail.com",
+            contrasena: "123456",
+            nombre: "Lucas",
+            area: "Lopez",
+            imagen:
+              "",
+          },
+          {
+            id: 6,
+            email: "pgiroud@gmail.com",
+            contrasena: "123456",
+            nombre: "Pablo",
+            area: "Giroud",
+            imagen:
+              "",
+          },
         ];
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        }
       </script>
       <script src="/login.js"></script>
-      <script src="/js/app.js"></script>
 </body>
 </html>

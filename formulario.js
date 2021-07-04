@@ -115,14 +115,13 @@ let tabla=document.querySelector("#tdobyCuerpo")
 // function que elimina el objecto seleccionado
  function eliminarEmpleo(id){
        trabajo=trabajos[id]
-     let validar=confirm(`Esta seguro que quiere elimar el empleo:${trabajo.puesto} de nuestra Web`)
+     let validar=confirm(`Esta seguro que quiere eliminar el empleo?\n\nID: ${trabajo.id}\nEmpresa: ${trabajo.nombre}\nPuesto: ${trabajo.puesto}`)
      if(validar){
            trabajos.splice(id,1)
            localStorage.setItem("trabajo",JSON.stringify(trabajos))
-           alert(`Se borro corectamente ${trabajo.puesto} `)
+           alert(`La publicación:\n\nID: ${trabajo.id}\nEmpresa: ${trabajo.nombre}\nPuesto: ${trabajo.puesto}\n\nSe ha eliminado correctamente.`)
            listaEmpleos()
-     }
-       
+     } 
  }
 //Para que se ejecute la lista de empleo sin problemas porque comparto el mismo js 
  if(tabla){

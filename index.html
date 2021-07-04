@@ -16,7 +16,6 @@
 <body>
     <header>
         <!-- Inicio Navbar -->
-
         <div class="container-fluid navv">
           <nav class="navbar navbar-expand-lg navpersonalizada">
             <div class="container">
@@ -27,7 +26,6 @@
                   height="45"
                   alt="logo"
               /></a>
-             <!--<a href="./login.html"> <button type="button" class="btn btn-primary">Login</button></a>-->
               <button
                 class="navbar-dark navbar-toggler"
                 type="button"
@@ -48,7 +46,10 @@
                     <a class="nav-link text-white" href="./empleos.html">Empleos</a>
                   </li>
                   <li class="nav-item ml-auto border-transition" id="linkAdmin">
-                  <!--<a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>-->
+                  <!--<a class="nav-link text-white" href="./admin.html">Admin</a>-->
+                  </li>
+                  <li class="nav-item ml-auto border-transition" id="linkForm">
+                    <!--<a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>-->
                   </li>
                   <li class="nav-item ml-auto border-transition" id="login-out" type="submit">
                   <a class="nav-link text-white" href="./login.html">Login</a>
@@ -203,30 +204,28 @@
 
           
     </main>
-  <footer class="footer-index">
-    <div class="container">
-      <div class="row text-center mt-2">
-        <div class="col-12 col-md-4 mb-2 pb-4 mx-auto">
-          <img  src="./img/trabajostuc-logo.png" width="100px" alt="logo footer">
+    <footer class="footer-index">
+      <div class="container">
+          <div class="row text-center pt-4">
+            <div class="col-3 col-md-4 mx-auto">
+              <img  src="./img/trabajostuc-logo.png" width="100px" alt="logo footer">
+            </div>
+            <div class="col-3 col-md-4 mb-4 mb-md-2 d-flex align-items-center justify-content-center">
+                    <a href="#"><i class="fa fa-facebook fa-2x text-white mx-2" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x text-white mx-2" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-2x text-white mx-2" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-3 col-md-4 d-flex align-items-center justify-content-center">
+              <span>La primera bolsa de trabajo en 
+                <br> Tucumán, Argentina.
+              </span>
+            </div>
+            <div class="col-12 text-center">
+              <p class="small">Copyright &copy;2021. Todos los derechos reservados.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-4 mb-4 mb-md-2 d-flex align-items-center justify-content-center">
-                <a href="#"><i class="fa fa-facebook fa-2x text-white mx-2" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter fa-2x text-white mx-2" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-2x text-white mx-2" aria-hidden="true"></i></a>
-        </div>
-        <div class="col-12 col-md-4 mb-4 mb-md-2 d-flex align-items-center justify-content-center">
-          <span>La primera bolsa tucumana de trabajo  <i class=""></i> en 
-            <br> Tucumán, Argentina.
-          </span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="small">Coyright &copy;2021. Todos los derechos reservados.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+      </footer>
   <script
   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -237,8 +236,8 @@
   integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
   crossorigin="anonymous"
 ></script>
+<script src="/js/app.js"></script>
 <script src="https://use.fontawesome.com/823835b326.js"></script>
 <script src="./EmpleosHome.js"></script>
-<script src="/js/app.js"></script>
 </body>
 </html>
