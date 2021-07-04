@@ -1,4 +1,4 @@
-if(usuario.email!=='admin@gmail.com'){
+if(usuario===null || usuario.email!=='admin@gmail.com'){
     document.querySelector('body').innerHTML=`
     <div class="alert alert-danger" role="alert">
     Necesitas loguearte para realizar esta accion
