@@ -18,6 +18,7 @@ const cargarCard=function(){
           <div id="botonPost">
            <button type="button" class="btn  mb-4 " data-toggle="button">
              Postularse</button></div>
+             
            </div>
            </div>
               
