@@ -9,7 +9,7 @@ if(usuario.email!=='admin@gmail.com'){
     </div>
     `
     setTimeout(function(){
-      location.replace('/login.html')
+      location.replace('/index.html')
     },2000)
 }else{
     linkAdmin.innerHTML=`
