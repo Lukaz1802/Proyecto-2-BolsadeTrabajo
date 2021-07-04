@@ -73,10 +73,8 @@
 #bodyCard{
       font-size: 25px;
 }
-button{
-      
-      float: right;
-   
+button{    
+      float: right; 
  /*margin-left: 525px;*/
 }
 #botonPost button{
