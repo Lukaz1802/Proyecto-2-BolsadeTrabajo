@@ -27,7 +27,7 @@
                   height="45"
                   alt="logo"
               /></a>
-             <a href="./login.html"> <button type="button" class="btn btn-primary">Login</button></a>
+             <!--<a href="./login.html"> <button type="button" class="btn btn-primary">Login</button></a>-->
               <button
                 class="navbar-dark navbar-toggler"
                 type="button"
@@ -47,10 +47,14 @@
                   <li class="nav-item ml-auto border-transition">
                     <a class="nav-link text-white" href="./empleos.html">Empleos</a>
                   </li>
-                  <li class="nav-item ml-auto border-transition">
-                    <a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>
+                  <li class="nav-item ml-auto border-transition" id="linkAdmin">
+                  <!--<a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>-->
                   </li>
-                </ul>
+                  <li class="nav-item ml-auto border-transition" id="login-out" type="submit">
+                  <a class="nav-link text-white" href="./login.html">Login</a>
+                  <!--<a class="nav-link text-white" href="./login.html">Logout</a>-->
+                  </li>
+                  </ul>
               </div>
           </nav>
         </div>
@@ -241,5 +245,6 @@
 ></script>
 <script src="https://use.fontawesome.com/823835b326.js"></script>
 <script src="./EmpleosHome.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
