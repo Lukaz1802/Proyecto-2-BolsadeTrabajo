@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  
-  
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .navv{
@@ -19,10 +17,14 @@
 }
 
 .carousel-inner img{
-
-  max-height: 70vh;
+  /* max-height: 70vh; */
   object-fit: cover;
+  width:150%; 
+  height:550px;
+  position:relative;
 }
+
+
 
 .footer-index{
   background-color: #00c8f8;
@@ -49,4 +51,11 @@
 .shadow-drop-2-tr {
   -webkit-animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#card-footer button{
+  background-color:  #00C8F8;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
