@@ -16,10 +16,12 @@ const cargarCard=function(){
              <p>Tipo: ${item.tipo}</p>
              <p>Ubicación: ${item.ubicacion}</p>
              <p>Página Web: ${item.url}</p>
+             <label>ID de empleo:</label>
+             <p id="idEmpleo">${item.id}</p>
              <p class="card-text"><small class="text-muted">
              ${item.fechaCreacion}</small></p>
              <div id="botonPost">
-           <button type="button" class="btn  mb-4 " data-toggle="button" >
+           <button type="button" class="btn  mb-4 " data-toggle="button" onclick="agregarPostulante()">
              Postularse  </button></div>
            </div>
            </div>

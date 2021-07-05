@@ -4,15 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/cargarCards.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/cargarCards.css" />
-​
-    <title>Listado de Empleos</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">​
+    <title>Empleos - Tucumán Trabajo</title>
   </head>
 
 <body>
@@ -20,13 +18,12 @@
       <div class="container-fluid navv">
         <nav class="navbar navbar-expand-lg navpersonalizada">
           <div class="container">
-            <a class="navbar-brand" href="./index.html"
-              ><img
+            <a class="navbar-brand" href="./index.html">
+              <img
                 src="./img/trabajostuc-logo.png"
                 width="45"
                 height="45"
-                alt="logo"
-            /></a>
+                alt="logo"/></a>
             <button
               class="navbar-dark navbar-toggler"
               type="button"
@@ -34,27 +31,28 @@
               data-target="#navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ml-auto border-transition">
-                  <a class="nav-link text-white" href="./index.html">Home</a>
+                  <a class="nav-link text-white hoverable" href="./index.html">Home</a>
                 </li>
-                <li class="nav-item ml-auto border-transition">
+                <li class="nav-item active ml-auto border-transition">
                   <a class="nav-link text-white" href="./empleos.html">Empleos</a>
                 </li>
+                <li class="nav-item active ml-auto border-transition" id="linkUser">
+                </li>
                 <li class="nav-item ml-auto border-transition" id="linkAdmin">
-                <!--<a class="nav-link text-white" href="./admin.html">Admin</a>-->
+                
                 </li>
                 <li class="nav-item ml-auto border-transition" id="linkForm">
-                  <!--<a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>-->
+                
                 </li>
                 <li class="nav-item ml-auto border-transition" id="login-out" type="submit">
                 <a class="nav-link text-white" href="./login.html">Login</a>
-                <!--<a class="nav-link text-white" href="./login.html">Logout</a>-->
+                
                 </li>
                 </ul>
             </div>
@@ -123,7 +121,17 @@
     </div>
   </div>
 </footer>
+<script>
+  $(document).ready(function () {
 
+      $('ul.navbar-nav > li')
+              .click(function (e) {
+          $('ul.navbar-nav > li')
+              .removeClass('active');
+          $(this).addClass('active');
+      });
+  });
+</script>
   <script src="/js/cargarCards.js"></script>  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
