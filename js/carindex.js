@@ -9,9 +9,10 @@ const cargaHome= function(){
             <div class="card-texto"><p>Puesto: ${item.puesto} <br> Ubicacion: ${item.ubicacion}</p></div>
             <p class="card-text"><small class="text-muted">${item.fechaCreacion}</small></p>
             </div>
-            <div class="card-footer">
-            <button class="btn btn-danger mx-4"></button>
-            <button class="btn btn-primary" onclick="verDetalle(${item.id})">Ver</button>
+            <div class="card-footer ">
+            <button class="btn btn-outline-danger  onclick="heart()"><i class="fa fa-heart-o"aria-hidden="true"></i></button>
+            <button class="btn  btn-outline-success " onclick="verDetalle(${index})"><i class="fa fa-eye"aria-hidden="true"></i></button>
+            <button class="btn  btn-outline-primary " onclick="verPostulacion(${index})">Postularse</button>
           </div>
             </div>`
             cuerpo.innerHTML += datos        
@@ -19,3 +20,30 @@ const cargaHome= function(){
       });
 }; 
 cargaHome()
+let detalle={
+
+}
+function verDetalle(index){
+  detalle=trabajos[index]
+        document.querySelector("#imagenE").src=detalle.imagen
+        document.querySelector("#puestoE").innerText=detalle.puesto
+        document.querySelector("#tipoE").innerText=detalle.tipo
+        document.querySelector("#ubicacionE").innerText=detalle.ubicacion
+        document.querySelector("#urlE").innerText=detalle.url
+          $('#modalModif').modal('show')
+}
+function head(){
+
+}
+
+function verPostulacion(index){
+
+    let  postulacion=trabajos[index];
+      let postulaciones=JSON.parse(localStorage.getItem("postulaciones"));
+      if(postulaciones===null){
+            postulaciones=[]
+      }
+      postulaciones.push(postulacion)
+      $('#modalPost').modal('show');
+      localStorage.setItem("postulaciones",JSON.stringify(postulaciones));
+}

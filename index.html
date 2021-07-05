@@ -35,7 +35,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item ml-auto border-transition">
+                  <li class="nav-item ml-auto border-transition activado">
                     <a class="nav-link text-white" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item ml-auto border-transition">
@@ -104,20 +104,10 @@
 
       </header>
        <main>
-      <hr>
+      <br>
         <h1 class="text-center">BOLSA DE TRABAJO</h1>
-<hr>
-      
-         
-            <div class="container" id="contenEmpleos">
-            </div>
-          
-          
-     
 
-
-
-        <div class="container">
+        <div class="container mb-5">
           <br/>
           <img src="./img/" alt="">
         <div class="row justify-content-center ">
@@ -140,13 +130,50 @@
                                   </form>
                               </div>
                               <!--end of col-->
-                          </div>
+                        </div>             
+                   </div>
       
-         
-         
-
-          
+        <div class="container mb-5 mt-5">
+             <div class="row" id="contenEmpleos"></div>
+      </div>                         
     </main>
+    <div class="modal" tabindex="-1" id="modalModif">
+      <div class="modal-dialog "> 
+    <div class="card"  style="width: 20rem;">
+      <img src="" alt="imagen" id="imagenE" class="card-img-top">
+      <div class="modal-body">
+      <div class="card-body">
+        <h5 class="card-title" id="puestoE"></h5>
+        <p class="card-text" id="tipoE"></p>
+        <p class="card-text" id="ubicacionE"></p>
+        <p class="card-text" id="urlE"></p>
+</div>
+</div>
+<div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+</div>
+</div>
+</div> 
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalPost">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4> Su postulacion ha sido Correcta ✔</h4>
+          </div>
+          <div class="modal-footer">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer-index">
       <div class="container">
           <div class="row text-center pt-4">

@@ -25,9 +25,9 @@
     color: white;
   }
   
-  .table-striped {
+  /* .table-striped {
     background-color: #00c8f8;
-  }
+  } */
   
   .form-control-borderless {
     border: none;
@@ -46,4 +46,20 @@
 .shadow-drop-2-tr {
   -webkit-animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.btn-update{
+      color:white ;
+      background-color: #00c8f8;
+      border-radius: 40px;
+      border: solid 3px  #00c8f8;
+}
+.btn-edit{
+      background-color: #00c8f8;
+}
+.btn-trash{
+      background-color: #5cb85c;
+}
+.activado{
+      border-bottom: 2px solid #5cb85c;
+      font-weight: bold;
 }
