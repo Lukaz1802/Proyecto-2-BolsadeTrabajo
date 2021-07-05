@@ -1,4 +1,3 @@
-
 let trabajos= JSON.parse(localStorage.getItem("trabajo")) || []
 
 let tabla=document.querySelector("#tdobyCuerpo")
