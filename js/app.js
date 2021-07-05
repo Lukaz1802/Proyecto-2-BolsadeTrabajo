@@ -2,6 +2,7 @@ let usuario=JSON.parse(localStorage.getItem('usuario')) || null
 let linkAdmin= document.querySelector('#linkAdmin')
 let linkForm= document.querySelector('#linkForm')
 let log= document.querySelector('#login-out')
+let linkUser= document.querySelector('#linkUser')
 let usuariosDB = JSON.parse (localStorage.getItem ("usuarios")) || []
 
 
@@ -27,6 +28,9 @@ if(!usuario){
     });
       if (usuarioVerificado) {
         if (usuario.contrasena === usuarioVerificado.contrasena) {
+          linkUser.innerHTML=`
+          <a class="nav-link text-white" href="./usuario.html">Mi espacio</a>
+          `
           log.innerHTML=`
           <button type="button" class="btn btn-info btnLogout" onclick="deslogueo()">Logout</button>
           `
