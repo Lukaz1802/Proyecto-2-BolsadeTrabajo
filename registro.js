@@ -25,7 +25,12 @@ const handleChange = function (e) {
       swal("Bien!", "Te has registrado correctamente!. Revisa tu casilla de correo", "success");
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
       formulario.reset();
-  
+      //Redirecciona a index logueado con nuevo usuario 
+      localStorage.setItem("usuario", JSON.stringify(usuario));
+      setTimeout(function(){
+        location.replace('/index.html')
+      },3000)
+
       //traer los campos de la card con los datos a mostrar
       document.querySelector("#name").innerText = usuario.nombre;
       document.querySelector("#correo").innerText = usuario.email;
@@ -39,7 +44,6 @@ const handleChange = function (e) {
       user_name: `${usuario.nombre}`,
       destinatario:`${usuario.email}`,
       message:`Gracias por registrarte en Tucumán trabajos! Ingresa al sitio con tu email y contraseña. Tu mail de inicio de sesion es: ${usuario.email} y tu contraseña: ${usuario.contrasena}`
-
   };  
    
   emailjs.send('service_i9v673l', 'template_srpyggu', templateParams)
