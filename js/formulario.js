@@ -1,5 +1,4 @@
-
-let trabajos= JSON.parse(localStorage.getItem("trabajo")) || []
+let trabajos= JSON.parse(localStorage.getItem("trabajo")) || [];
 
 //Creo la estrcuctuarque es un objecto donde guardare un empleo creado
  let trabajo = {
@@ -13,8 +12,8 @@ let trabajos= JSON.parse(localStorage.getItem("trabajo")) || []
       url:"",
       vacantes:"",
       fechaCreacion:"",
-      ubicacion:""
-
+      ubicacion:"",
+      postulantes:[],
  }
  //Utilizo el form de formulario y el de la lista donde hacen la misma fuction
  const handleChange=function (e){

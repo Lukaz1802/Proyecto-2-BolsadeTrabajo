@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD:css/index.css
   font-family: 'Lexend Deca', sans-serif;
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> pgiroud:index.css
 }
 
 .navv{
@@ -13,7 +17,9 @@
   padding: 0;
   z-index: 2;
   background-color:#00c8f8;
-  
+}
+.sectHover, a:hover {
+  color: #000;
 }
 
 .carousel-inner img{
@@ -52,6 +58,7 @@
   -webkit-animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           animation: shadow-drop-2-tr 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+<<<<<<< HEAD:css/index.css
 
 #card-footer button{
   background-color:  #00C8F8;
@@ -59,3 +66,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+=======
+.nav-item:hover{
+  background-color: #04a9d1 !important;
+}
+.navbar-nav > .active > a { 
+  background-color: #008eb0 ; 
+}
+.btnLogout{
+  background-color: #008eb0 !important ;
+  border-radius: 0 !important;
+}
+>>>>>>> pgiroud:index.css

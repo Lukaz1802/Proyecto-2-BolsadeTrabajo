@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <link rel="stylesheet" href="formulario.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-
-      <title>Formulario de Registro de Empresas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">​
+    <title>Formulario</title>
 </head>
 <body> 
       <header>
         <div class="container-fluid navv">
           <nav class="navbar navbar-expand-lg navpersonalizada">
             <div class="container">
-              <a class="navbar-brand" href="./index.html"
-                ><img
+              <a class="navbar-brand" href="./index.html">
+                <img
                   src="./img/trabajostuc-logo.png"
                   width="45"
                   height="45"
-                  alt="logo"
-              /></a>
-             <!--<a href="./login.html"> <button type="button" class="btn btn-primary">Login</button></a>-->
+                  alt="logo"/></a>
               <button
                 class="navbar-dark navbar-toggler"
                 type="button"
@@ -32,27 +28,28 @@
                 data-target="#navbarNav"
                 aria-controls="navbarNav"
                 aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item ml-auto border-transition">
-                    <a class="nav-link text-white" href="./index.html">Home</a>
+                    <a class="nav-link text-white hoverable" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item ml-auto border-transition">
                     <a class="nav-link text-white" href="./empleos.html">Empleos</a>
                   </li>
-                  <li class="nav-item ml-auto border-transition" id="linkAdmin">
-                  <!--<a class="nav-link text-white" href="./admin.html">Admin</a>-->
+                  <li class="nav-item active ml-auto border-transition" id="linkUser">
                   </li>
-                  <li class="nav-item ml-auto border-transition" id="linkForm">
-                    <!--<a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>-->
+                  <li class="nav-item ml-auto border-transition" id="linkAdmin">
+                  
+                  </li>
+                  <li class="nav-item active ml-auto border-transition" id="linkForm">
+                  
                   </li>
                   <li class="nav-item ml-auto border-transition" id="login-out" type="submit">
                   <a class="nav-link text-white" href="./login.html">Login</a>
-                  <!--<a class="nav-link text-white" href="./login.html">Logout</a>-->
+                  
                   </li>
                   </ul>
               </div>
@@ -254,7 +251,17 @@
     );
   })();
 </script>
+<script>
+  $(document).ready(function () {
 
+      $('ul.navbar-nav > li')
+              .click(function (e) {
+          $('ul.navbar-nav > li')
+              .removeClass('active');
+          $(this).addClass('active');
+      });
+  });
+</script>
     
 <script
 src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
