@@ -60,12 +60,12 @@ let tabla=document.querySelector("#tdobyCuerpo")
      
       trabajos.forEach(function(empleo,index){
              let fila=document.createElement("tr")
-             let cuerpo= `<th scope="row">${empleo.id}</th>
-             <td>${empleo.nombre}</td>
-             <td>${empleo.ubicacion}</td>
-             <td>${empleo.fechaCreacion}</td>
-            <td><button class="btn btn-light " onclick="verEmpleo(${index})">Ver</button></td>
-            <td><button class="btn btn-light " onclick="eliminarEmpleo(${index})">Eliminar</button></td>`
+             let cuerpo= `<th scope="row" >${empleo.id}</th>
+             <td scope="col">${empleo.nombre}</td>
+             <td scope="col">${empleo.ubicacion}</td>
+             <td scope="col">${empleo.fechaCreacion}</td>
+            <td scope="col"><button class="btn btn-edit" onclick="verEmpleo(${index})"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button></td>
+            <td scope="col"><button class="btn btn-trash " onclick="eliminarEmpleo(${index})"><i class="fa fa-trash-o" aria-hidden="true"></i></button></td>`
             fila.innerHTML=cuerpo
             tabla.appendChild(fila)
       });
@@ -76,7 +76,7 @@ let tabla=document.querySelector("#tdobyCuerpo")
 // colcando el objecto seleccionado en un modal donde se vera visualmente todos los datos de mismo objecto
  function verEmpleo(index){
        trabajo=trabajos[index]
-      document.querySelector("#nameEmpleo").innerText=trabajo.id
+      document.querySelector("#nameEmpleo").innerText= trabajo.id
       document.querySelector("#logoEntr").value=trabajo.logo
       document.querySelector("#nameEntr").value=trabajo.nombre
       document.querySelector("#tipoEntr").value=trabajo.tipo

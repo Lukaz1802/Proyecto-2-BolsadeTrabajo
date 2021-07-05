@@ -21,6 +21,7 @@ const handleSubmit = function (e) {
     if (usuario.contrasena === usuarioVerificado.contrasena) {
       alert("Bienvenido a Tucumán Trabajo!");
       localStorage.setItem("usuario", JSON.stringify(usuarioVerificado));
+      
       location.replace("/index.html")
     } else {
       alert("Usuario o contraseña incorrectos");

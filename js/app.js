@@ -41,6 +41,7 @@ if(!usuario){
 
 const deslogueo = function () {
   localStorage.setItem("usuario", null);
+  localStorage.setItem("postulaciones",null)
   location.replace("/index.html")
   log.innerHTML=`
   <a class="nav-link text-white" href="./login.html"></a>`  
