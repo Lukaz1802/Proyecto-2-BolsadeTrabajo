@@ -1,4 +1,4 @@
-if(usuario.email!=='admin@gmail.com'){
+if(usuario===null || usuario.email!=='admin@gmail.com'){
     document.querySelector('body').innerHTML=`
     <div class="alert alert-danger" role="alert">
     Necesitas loguearte para realizar esta accion
@@ -15,6 +15,6 @@ if(usuario.email!=='admin@gmail.com'){
   <a class="nav-link text-white" href="./formulario.html">Agregar Empleos</a>
   `
   log.innerHTML=`
-  <button type="button" class="btn btn-primary" onclick="deslogueo()">Logout</button>
+  <button type="button" class="btn btn-info btnLogout" onclick="deslogueo()">Logout</button>
   `
 }

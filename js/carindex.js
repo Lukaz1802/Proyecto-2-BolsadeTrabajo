@@ -10,7 +10,6 @@ const cargaHome= function(){
             <p class="card-text"><small class="text-muted">${item.fechaCreacion}</small></p>
             </div>
             <div class="card-footer ">
-            <button class="btn btn-outline-danger  onclick="heart()"><i class="fa fa-heart-o"aria-hidden="true"></i></button>
             <button class="btn  btn-outline-success " onclick="verDetalle(${index})"><i class="fa fa-eye"aria-hidden="true"></i></button>
             <button class="btn  btn-outline-primary " onclick="verPostulacion(${index})">Postularse</button>
           </div>
@@ -21,7 +20,6 @@ const cargaHome= function(){
 }; 
 cargaHome()
 let detalle={
-
 }
 function verDetalle(index){
   detalle=trabajos[index]
@@ -33,11 +31,8 @@ function verDetalle(index){
           $('#modalModif').modal('show')
 }
 function head(){
-
 }
-
 function verPostulacion(index){
-
     let  postulacion=trabajos[index];
       let postulaciones=JSON.parse(localStorage.getItem("postulaciones"));
       if(postulaciones===null){
